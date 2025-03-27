@@ -4,11 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Model
+class Admin extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\AdminFactory> */
     use HasFactory;
+
 
     protected $fillable = [
         'name',
@@ -31,5 +33,5 @@ class Admin extends Model
 //    public function users(){
 //        return $this->hasMany(User::class);
 //    }
-  
+
 }

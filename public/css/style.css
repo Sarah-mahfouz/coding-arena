@@ -1015,12 +1015,14 @@ ol {
 	position: absolute;
 	left: -13px;
 	bottom: 19px;
+    width: 25%;
 }
 
 .footer-right-pic {
 	position: absolute;
 	right: 50px;
 	bottom: 19px;
+    width: 14%;
 }
 
 .footer-menu {

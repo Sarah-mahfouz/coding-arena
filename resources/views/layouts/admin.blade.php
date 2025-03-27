@@ -31,7 +31,7 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- CSS Files -->
-    <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet" />
+    <link id="pagestyle" href="{{asset('assets/css/argon-dashboard.css?v=2.1.0')}}" rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show   bg-gray-100">
@@ -48,7 +48,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="../pages/dashboard.html">
+                <a class="nav-link active" href="{{route('admin.dashboard')}}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-tv-2 text-dark text-sm opacity-10"></i>
                     </div>
@@ -56,27 +56,43 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="../pages/tables.html">
+                <a class="nav-link " href="{{route('categories.index')}}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-calendar-grid-58 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">Categories</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="../pages/billing.html">
+                <a class="nav-link " href="{{route('badges.index')}}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-credit-card text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Billing</span>
+                    <span class="nav-link-text ms-1">Badges</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="../pages/virtual-reality.html">
+                <a class="nav-link " href="{{route('challenges.index')}}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-app text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Virtual Reality</span>
+                    <span class="nav-link-text ms-1">Challenges</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{route('challenges.index')}}">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-app text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{route('challenges.index')}}">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-app text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Admin</span>
                 </a>
             </li>
             <li class="nav-item">
